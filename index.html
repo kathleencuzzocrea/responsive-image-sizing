@@ -17,30 +17,33 @@
          <section class="col-span-full picture-box">
             <h2>Using the &lt;picture&gt; tag</h2>
             <p>The <a href="https://www.w3schools.com/tags/tag_picture.asp">&lt;picture&gt;</a> tag is used for art direction purposes</p>
+
+            <picture>
+                <source srcset="images/stars-1200.png" alt="Mountain with starry background" media="(min-width:1200px)">
+                <source srcset="images/stars-700.png" alt="Mountain with starry background" media="(min-width:768px)">
+                <img src="images/stars-350.png" alt="Mountain with starry background">
+            </picture>
          </section>
 
          <section class="col-span-full picture-box">
             <h2>Using the &lt;img&gt; tag and srcset attribute</h2>
 
-            <!-- <picture>
-<img
-sizes="(max-width: 900px) 100vw, 900px"
-srcset="
-pexels-pixabay-41162_zh3bjr_c_scale,w_320.jpg 320w,
-pexels-pixabay-41162_zh3bjr_c_scale,w_567.jpg 567w,
-pexels-pixabay-41162_zh3bjr_c_scale,w_765.jpg 765w,
-pexels-pixabay-41162_zh3bjr_c_scale,w_900.jpg 900w"
-src="pexels-pixabay-41162_zh3bjr_c_scale,w_900.jpg"
-alt="">
-</picture> -->
+            <!-- from https://www.responsivebreakpoints.com -->
+                <img
+                sizes="(max-width: 900px) 100vw, 900px"
+                srcset="
+                images/pexels-pixabay-41162_zh3bjr_c_scale,w_320.jpg 320w,
+                images/pexels-pixabay-41162_zh3bjr_c_scale,w_567.jpg 567w,
+                images/pexels-pixabay-41162_zh3bjr_c_scale,w_765.jpg 765w,
+                images/pexels-pixabay-41162_zh3bjr_c_scale,w_900.jpg 900w"
+                src="pexels-pixabay-41162_zh3bjr_c_scale,w_900.jpg"
+                alt="Astronaut on the surface of the moon">
          </section>
 
          <section class="col-span-full picture-box">
             <h2>Using the background-image attribute in CSS</h2>
-
-            <div id="css-background-image">
-
-            </div>
+                
+            <div id="css-background-image"></div>
          </section>
 
     </main>

@@ -6,3 +6,25 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#css-background-image{
+    height: 197px;
+    background-image: url(../images/saturn-350.png);
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px){
+        #css-background-image{
+        height: 394px;
+        background-image: url(../images/saturn-700.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 1200px){
+        #css-background-image{
+        height: 675px;
+        background-image: url(../images/saturn-1200.png);
+        background-repeat: no-repeat;
+    }
+}
