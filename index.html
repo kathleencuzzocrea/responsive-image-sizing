@@ -6,17 +6,21 @@
     <title>Responsive Image Sizing</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="grid-con full-width-grid-con">
-        <h1 class="col-span-full justify">Responsive Image Sizing</h1>
+    <header>
+        <section class="grid-con center-grid-con">
+            <h1 class="col-span-full justify">Responsive Image Sizing</h1>
+        </section>
     </header>
 
     <main class="grid-con center-grid-con">
-        <!-- picture tag -->
          <section class="col-span-full picture-box">
-            <h2>Using the &lt;picture&gt; tag</h2>
-            <p>The <a href="https://www.w3schools.com/tags/tag_picture.asp">&lt;picture&gt;</a> tag is used for art direction purposes</p>
+            <h2>Using the <span>&lt;picture&gt;</span> tag</h2>
 
             <picture>
                 <source srcset="images/stars-1200.png" alt="Mountain with starry background" media="(min-width:1200px)">
@@ -26,7 +30,7 @@
          </section>
 
          <section class="col-span-full picture-box">
-            <h2>Using the &lt;img&gt; tag and srcset attribute</h2>
+            <h2>Using the <span>&lt;img&gt;</span> tag and srcset attribute</h2>
 
             <!-- from https://www.responsivebreakpoints.com -->
                 <img
@@ -41,15 +45,17 @@
          </section>
 
          <section class="col-span-full picture-box">
-            <h2>Using the background-image attribute in CSS</h2>
+            <h2>Using the <span>background-image</span> attribute in CSS</h2>
                 
             <div id="css-background-image"></div>
          </section>
 
     </main>
 
-    <footer class="grid-con full-width-grid-con">
-        <p class="col-span-full justify">Kathleen Cuzzocrea 2026</p>
+    <footer>
+        <section class="grid-con center-grid-con">
+            <p class="col-span-full justify">Kathleen Cuzzocrea 2026</p>
+        </section>
     </footer>
     
     <script src="js/script.js"></script>
